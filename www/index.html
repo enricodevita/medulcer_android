@@ -26,11 +26,11 @@
 	    states[Connection.CELL]     = 'Connessione Generica';
 	    states[Connection.NONE]     = 'Nessuna Connessione';
 
-//	    alert('Connection type: ' + states[networkState]);
-		if(netwoarkState != Connection.NONE){		
+	    alert('Connection type: ' + states[networkState]);
+		if(networkState != Connection.NONE){		
 			var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
 		}else{
-			navigator.notification.alert("E' necessario essere connessi alla rete per utilizzare l'app", function(){}, "Nessuna Connessione");
+			navigator.notification.alert("E' necessario essere connessi alla rete per utilizzare l'app", fail(){}, "Nessuna Connessione");
 		}
     }
 
