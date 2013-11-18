@@ -4,13 +4,18 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+		<!-- link rel="stylesheet" type="text/css" href="css/mobile.css" / -->
         <title>01Rabbit</title>
-        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8">
     document.addEventListener("deviceready",onDeviceReady,false);
     function onDeviceReady() {
+		alert('ready');
 		//	var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
+		document.getElementById("btnVai").addEventListener("click", vai, false);
+    	document.getElementById("aVai").addEventListener("click", vai, false);
+		document.getElementById("btnVai").addEventListener("touchend", vai, false);
+    	document.getElementById("aVai").addEventListener("touchend", vai, false);
     }
 
     function vai() {
@@ -37,9 +42,9 @@
     </script>
     </head>
     <body>
-	<a href="#" onclick="vai(); return false;"><img src="splash.png" style="margin: 100px auto; border: 0px; height: 100%" /></a>
+	<a id="aVai" href="#" onclick="vai(); return false;"><img src="splash.png" style="margin: 100px auto; border: 0px; height: 100%" /></a>
 
-	<input type="button" onclick="vai();" value="vai"/>	
+	<input id="btnVai" type="button" value="vai"/>	
 
 </body>
 </html>
