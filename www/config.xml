@@ -27,7 +27,7 @@
     <access origin="http://medulcer.01rabbit.it*"/>
 
     <content src="http://medulcer.01rabbit.it/mobile/index.jsf" />
-    <content src="index.html" />
+    <!--<content src="index.html" />-->
 
       <preference name="loadUrlTimeoutValue" value="20000" />
       <preference name="errorUrl" value="error.html" />
