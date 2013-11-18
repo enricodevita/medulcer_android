@@ -26,13 +26,14 @@
 <!--    <access origin="http://192.168.2.18*"/>-->
     <access origin="http://medulcer.01rabbit.it*"/>
 
-<!--    <content src="http://medulcer.01rabbit.it/mobile/index.jsf" />-->
+    <content src="http://medulcer.01rabbit.it/mobile/index.jsf" />
     <content src="index.html" />
 
+      <preference name="loadUrlTimeoutValue" value="20000" />
+      <preference name="errorUrl" value="error.html" />
     <!--
       <preference name="splashscreen" value="resourceName" />
       <preference name="backgroundColor" value="0xFFF" />
-      <preference name="loadUrlTimeoutValue" value="20000" />
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
     -->
