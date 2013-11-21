@@ -29,10 +29,12 @@
     <content src="http://medulcer.01rabbit.it/mobile/index.jsf" />
     <!--<content src="index.html" />-->
 
-      <preference name="loadUrlTimeoutValue" value="20000" />
-      <preference name="errorUrl" value="error.html" />
-      <preference name="loadingDialog" value="Caricamento Medulcer, devi essere connesso per eseguire l'applicazione" />
-    <!--  <preference name="android-windowSoftInputMode" value="adjustResize" /> -->
+      <preference name="LoadUrlTimeoutValue" value="20000" />
+      <preference name="ErrorUrl" value="error.html" />
+      <preference name="LoadingDialog" value="Caricamento Medulcer, devi essere connesso per eseguire l'applicazione" />
+      <preference name="LoadingPageDialog" value="Caricamento Dati..." />
+      <preference name="android-windowSoftInputMode" value="adjustPan" />
+		<preference name="SplashScreenDelay" value="5000"/>
 
     <!--
       <preference name="splashscreen" value="resourceName" />
@@ -47,6 +49,9 @@
 	
 <icon src="icon.png" />	
 <gap:splash src="splash.png" />
+<gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 
 <!-- to enable individual permissions use the following examples -->
 <!--
