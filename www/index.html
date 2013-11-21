@@ -25,12 +25,24 @@
 	function alertDismissed() {
 	}
 
+	function connetti(){
+		var networkState = navigator.connection.type;
+		if(networkState === 'none'){
+			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
+		}else{
+            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
+		}
+	}
     </script>
     </head>
     <body>
 	<div class="alert alert-danger">
 		Errore di connessione. Connetti il device e riprova		
 	</div>
+	
+	<button type="button" class="btn btn-default btn-lg" onclick="connetti()">
+		  <span class="glyphicon glyphicon-refresh"></span> Riprova
+	</button>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
