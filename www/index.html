@@ -19,8 +19,8 @@
 		if(networkState === 'none'){
 			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
 			$("#bar").hide();
-			$(".tog").css('visibility','visible');
-			$(".tog").show();
+			$("#tog").css('visibility','visible');
+			$("#tog").show();
 		}else{
             var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
 		}
@@ -31,12 +31,12 @@
 
 	function connetti(){
 		$("#bar").show();
-		$(".tog").hide();
+		$("#tog").hide();
 		var networkState = navigator.connection.type;
 		if(networkState === 'none'){
 			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
 			$("#bar").hide();
-			$(".tog").show();
+			$("#tog").show();
 		}else{
             var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
 		}
