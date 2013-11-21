@@ -32,7 +32,7 @@
       <preference name="loadUrlTimeoutValue" value="20000" />
       <preference name="errorUrl" value="error.html" />
       <preference name="loadingDialog" value="Caricamento Medulcer, devi essere connesso per eseguire l'applicazione" />
-      <preference name="android-windowSoftInputMode" value="adjustPan" />
+      <preference name="android-windowSoftInputMode" value="adjustResize" />
 
     <!--
       <preference name="splashscreen" value="resourceName" />
