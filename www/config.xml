@@ -30,7 +30,7 @@
     <!--<content src="index.html" />-->
 
       <preference name="LoadUrlTimeoutValue" value="20000" />
-      <preference name="ErrorUrl" value="file:///android_asset/www/error.html" />
+      <preference name="ErrorUrl" value="error.html" />
       <preference name="LoadingDialog" value="Caricamento Medulcer, devi essere connesso per eseguire l'applicazione" />
       <preference name="LoadingPageDialog" value="Caricamento Dati..." />
       <preference name="android-windowSoftInputMode" value="adjustPan" />
