@@ -9,7 +9,9 @@
         <script type="text/javascript" charset="utf-8">
     document.addEventListener("deviceready",onDeviceReady,false);
     function onDeviceReady() {
-            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
+		var networkState = navigator.connection.type;
+		alert(networkState);
+//            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
     }
     </script>
     </head>
