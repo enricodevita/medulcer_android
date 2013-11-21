@@ -13,14 +13,13 @@
 
 
         <script type="text/javascript" charset="utf-8">
-	$(".tog").hide();
     document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady() {
-		$(".tog").hide();
 		var networkState = navigator.connection.type;
 		if(networkState === 'none'){
 			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
 			$("#bar").hide();
+			$(".tog").css('visibility','visible');
 			$(".tog").show();
 		}else{
             var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
@@ -54,7 +53,7 @@
 	  </div>
 	</div>
 	
-	<div id="tog">
+	<div id="tog" visibility="hidden">
 			<div class="alert alert-danger">
 				Errore di connessione.<br/> Connetti il device e riprova		
 			</div>
