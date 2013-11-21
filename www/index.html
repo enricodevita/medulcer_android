@@ -19,7 +19,7 @@
 		if(networkState === 'none'){
 			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
 			$("#bar").hide();
-			$(".container").show();
+			$(".tog").show();
 		}else{
             var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
 		}

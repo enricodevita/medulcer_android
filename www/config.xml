@@ -17,7 +17,7 @@
 	<preference name="fullscreen" value="true" />
 <!--	<preference name="useBrowserHistory" value="false" /> -->
 	
-	<gap:platform name="ios" />
+	<!--gap:platform name="ios" / -->
 	<gap:platform name="android" />
 
     <preference name="loglevel" value="DEBUG" />
