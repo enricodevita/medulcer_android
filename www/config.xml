@@ -34,7 +34,7 @@
       <preference name="LoadingDialog" value="Caricamento Medulcer, devi essere connesso per eseguire l'applicazione" />
       <preference name="LoadingPageDialog" value="Caricamento Dati..." />
       <preference name="android-windowSoftInputMode" value="adjustPan" />
-		<preference name="SplashScreenDelay" value="5000"/>
+		<preference name="SplashScreenDelay" value="3000"/>
 
     <!--
       <preference name="splashscreen" value="resourceName" />
