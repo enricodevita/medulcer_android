@@ -10,12 +10,19 @@
     document.addEventListener("deviceready",onDeviceReady,false);
     function onDeviceReady() {
 		var networkState = navigator.connection.type;
-		alert(networkState);
-//            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
+		if(networkState === 'none'){
+			navigator.notification.alert('non sei connesso!', alertDismissed,'Nessuna Connessione','ok');			
+		}else{
+            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
+		}
     }
+
+	function alertDismissed() {
+	}
+
     </script>
     </head>
     <body>
         <h2>Attendere prego...</h2>
-        </body>
+    </body>
 </html>
