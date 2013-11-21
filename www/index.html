@@ -4,54 +4,16 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
         <title>01Rabbit</title>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" charset="utf-8">
-
     document.addEventListener("deviceready",onDeviceReady,false);
-
     function onDeviceReady() {
-		//var networkState = navigator.connection.type;
-	    //alert('Connection type: ' + networkState);
-		//vai();		
-		//alert('ready');
-		var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
-//		document.getElementById("btnVai").addEventListener("click", vai, false);
-//    	document.getElementById("aVai").addEventListener("click", vai, false);
-		//document.getElementById("btnVai").addEventListener("touchend", vai, false);
-  //  	document.getElementById("aVai").addEventListener("touchend", vai, false);
-    }
-
-    function vai() {
-		var networkState = navigator.connection.type;
-
-	    var states = {};
-	    states[Connection.UNKNOWN]  = 'Connessione Sconosciuta';
-	    states[Connection.ETHERNET] = 'Connessione Ethernet';
-	    states[Connection.WIFI]     = 'Connessione WiFi';
-	    states[Connection.CELL_2G]  = 'Connessione Cell 2G';
-	    states[Connection.CELL_3G]  = 'Connessione Cell 3G';
-	    states[Connection.CELL_4G]  = 'Connessione Cell 4G';
-	    states[Connection.CELL]     = 'Connessione Generica';
-	    states[Connection.NONE]     = 'Nessuna Connessione';
-
-	    alert('Connection type: ' + states[networkState]);
-		if(networkState != Connection.NONE){		
-			var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
-		}else{
-			navigator.notification.alert("E' necessario essere connessi alla rete per utilizzare l'app", fail(){}, "Nessuna Connessione");
-		}
+            var ref = window.open(encodeURI('http://medulcer.01rabbit.it/mobile/index.jsf'), '_self','location=no');
     }
     </script>
     </head>
     <body>
-<h1> Attendere Prego</h1>
-
-	<!--
-<a id="aVai" href="#" onclick="vai(); return false;"><img src="splash.png" style="margin: 100px auto; border: 0px; height: 100%" /></a>
-	<input id="btnVai" type="button" value="__________ vai  __________"/>	
--->
-
-</body>
+        <h2>Attendere prego...</h2>
+        </body>
 </html>
