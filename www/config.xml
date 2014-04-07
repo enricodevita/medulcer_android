@@ -22,20 +22,20 @@
 
     <preference name="loglevel" value="DEBUG" />
 
-    	<access origin="*"/>
+    <access origin="*"/>
 	<access origin=".*"/>
 <!--    <access origin="http://192.168.2.18*"/>-->
-    	<access origin="http://www.woumed.it*"/>
+    <access origin="http://www.woumed.it*"/>
 	<access origin="http://woumed.it*"/>
 
 <!--    <content src="http://medulcer.01rabbit.it/mobile/index.jsf" /> -->
 	<content src="index.html" />
 
-      	<preference name="LoadUrlTimeoutValue" value="20000" />
-      	<preference name="ErrorUrl" value="error.html" />
-      	<preference name="LoadingDialog" value="Caricamento Woumed, devi essere connesso per eseguire l'applicazione" />
-      	<preference name="LoadingPageDialog" value="Caricamento Dati..." />
-      	<preference name="android-windowSoftInputMode" value="adjustPan" />
+    <preference name="LoadUrlTimeoutValue" value="20000" />
+    <preference name="ErrorUrl" value="error.html" />
+    <preference name="LoadingDialog" value="Caricamento Woumed, devi essere connesso per eseguire l'applicazione" />
+    <preference name="LoadingPageDialog" value="Caricamento Dati..." />
+    <preference name="android-windowSoftInputMode" value="adjustPan" />
 	<preference name="SplashScreenDelay" value="3000"/>
 
     <!--
