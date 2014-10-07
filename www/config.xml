@@ -21,6 +21,7 @@
 	<preference name="SplashScreenDelay" value="3000"/>
 
 <!-- nuove preference -->
+<!--	
 	<preference name="target-device" value="universal" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
@@ -32,6 +33,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+-->
 
 	<gap:platform name="android" />
 
